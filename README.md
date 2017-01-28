@@ -1,5 +1,8 @@
 # Page Parser
 
+[![Coverage Status](https://coveralls.io/repos/github/andela-oakinniranye/page-parser/badge.svg?branch=master)](https://coveralls.io/github/andela-oakinniranye/page-parser?branch=master)
+
+
 This is a page parser project that indexes the contents of a web page.
 
 Tech design for this application is [available here](https://gist.github.com/andela-oakinniranye/244834419baa5ca6374c899f9705d7e6)
