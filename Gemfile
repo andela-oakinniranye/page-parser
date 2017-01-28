@@ -19,12 +19,16 @@ gem 'redis', '~> 3.0'
 
 # Page parser
 gem 'nokogiri'
+gem 'figaro'
+gem 'open_uri_redirections', require: false
+gem 'active_model_serializers'
 
 group :development, :test do
   # Use pry for debugging
   gem 'pry-rails'
   # Use sqlite3 as the database
   gem 'sqlite3'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -40,10 +44,14 @@ group :production do
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem "mock_redis"
+  gem 'rspec-sidekiq'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem 'guard-rspec', require: false
+  gem 'rails-controller-testing'
+  gem 'coveralls', require: false
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
