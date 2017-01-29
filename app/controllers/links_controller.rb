@@ -3,7 +3,7 @@ class LinksController < ApplicationController
 
 =begin
   @apiVersion 1.0.0
-  @api {get} /links Index - Fetch all Links
+  @api {get} /links Fetch all Links
   @apiGroup Links Endpoint
 
   @apiExample {url} Url Example for Links
@@ -24,7 +24,7 @@ class LinksController < ApplicationController
 
 =begin
   @apiVersion 1.0.0
-  @api {get} /links/:id Index - Show a link
+  @api {get} /links/:id Show a link
 
   @apiGroup Links Endpoint
 
@@ -60,7 +60,7 @@ class LinksController < ApplicationController
 
 =begin
   @apiVersion 1.0.0
-  @api {post} /links Index - Create a new link
+  @api {post} /links Create a new link
   @apiGroup Links Endpoint
 
   @apiError RecordNotFound {Object} The resource could not be created
