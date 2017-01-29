@@ -5,6 +5,9 @@
 
 This is a page parser project that indexes the contents of a web page.
 
+### API
+For convenience, a working api is available at: [indices](http://indices.herokuapp.com) and you can find the [Endpoint Docs here](http://indices.herokuapp.com/docs/)
+
 Tech design for this application is [available here](https://gist.github.com/andela-oakinniranye/244834419baa5ca6374c899f9705d7e6)
 
 ## Objective
