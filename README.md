@@ -21,6 +21,20 @@ The objective of this project is to create a tiny RESTful API to index a page's 
 - Rails 5
 - Redis
 
+## Get Started
+
+For local development,
+
+- First, ensure you're on Ruby 2.3 or greater
+- Install Redis, required by Sidekiq: `brew install redis` on Mac with Homebrew
+- Run `bundle install`
+- Run `bundle exec rails db:migrate`
+- Run `bundle exec rails server`
+- Start your sidekiq server `bundle exec sidekiq`
+- open your browser to: `http://localhost:3000/docs` you should find the docs
+- try out the application according to the doc
+
+
 ## External gems
 - Sidekiq - We send every new link created to sidekiq to process the job, this ensures that a user is not timed out on a response
 - ActiveModelSerializer - All response from the API is serialized with this
