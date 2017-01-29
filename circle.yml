@@ -1,0 +1,8 @@
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: indices
+machine:
+  ruby:
+    version: 2.3.1
